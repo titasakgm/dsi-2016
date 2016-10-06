@@ -726,18 +726,18 @@ Ext.application({
           {map: '/ms603/map/wms-dsi.map', layers: 'mangrove_2552', transparent: true},
           {isBaseLayer: false,visibility: false}
         ),
-        new OpenLayers.Layer.WMS(
-          "ป่าชายเลน ปี 2543",
-          "http://203.151.201.129/cgi-bin/mapserv",
-          {map: '/ms603/map/wms-dsi.map', layers: 'mangrove_2543', transparent: true},
-          {isBaseLayer: false,visibility: false}
-        ),
-        new OpenLayers.Layer.WMS(
-          "ป่าชายเลน ปี 2530",
-          "http://203.151.201.129/cgi-bin/mapserv",
-          {map: '/ms603/map/wms-dsi.map', layers: 'mangrove_2530', transparent: true},
-          {isBaseLayer: false,visibility: false}
-        ),
+        // new OpenLayers.Layer.WMS(
+        //   "ป่าชายเลน ปี 2543",
+        //   "http://203.151.201.129/cgi-bin/mapserv",
+        //   {map: '/ms603/map/wms-dsi.map', layers: 'mangrove_2543', transparent: true},
+        //   {isBaseLayer: false,visibility: false}
+        // ),
+        // new OpenLayers.Layer.WMS(
+        //   "ป่าชายเลน ปี 2530",
+        //   "http://203.151.201.129/cgi-bin/mapserv",
+        //   {map: '/ms603/map/wms-dsi.map', layers: 'mangrove_2530', transparent: true},
+        //   {isBaseLayer: false,visibility: false}
+        // ),
         new OpenLayers.Layer.WMS(
           "เขตป่าสงวน",
           "http://203.151.201.129/cgi-bin/mapserv",
