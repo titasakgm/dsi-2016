@@ -955,7 +955,7 @@ Ext.application({
             xtype: "panel",
             region: "south",
             height: 30,
-            html: '<div class="marquee" style="font-size:20px;height:30px;">ข้อมูลภาพแผนที่ใช้เพื่อการตรวจสอบข้อมูลเบื้องต้นเท่านั้น ...</div>'
+            html: '<div class="marquee" style="font-size:20px;height:30px;"><b>ข้อมูลภาพแผนที่ใช้เพื่อการตรวจสอบข้อมูลเบื้องต้นเท่านั้น ...</b></div>'
         }]
       }
     });
