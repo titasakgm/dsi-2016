@@ -358,16 +358,22 @@ Ext.application({
       pt.transform(merc, gcs);
       lon = pt.lon;
       lat = pt.lat;
-      var img_url = 'http://maps.googleapis.com/maps/api/streetview?size=400x400&location=' + lat + ',' + lon;
-      img_url += '&sensor=false&key=AIzaSyBqV7t6ICzq0umG62aYEnkYFdeg55JdwF0';
-      var html = "<center><img src='" + img_url + "' /></center>";
-      Ext.create("Ext.window.Window", {
-        title: "<a href='http://maps.google.com/maps?q=&layer=c&cbll=" + lat + "," + lon + "&cbp=12,0,0,0,0&output=svembed' target='_blank'>Google Street View</a> <font color='red'><b>ท่านสามารถใช้เม้าส์คลิกที่ link ด้านซ้ายมือได้</b></font>",
-        width: 450,
-        height: 450,
-        layout: 'fit',
-        closable: true,
-        html: html
+
+      // Go directly to Google Street View
+      var gsv_url = "http://maps.google.com/maps?q=&layer=c&cbll=" + lat + "," + lon + "&cbp=12,0,0,0,0&output=svembed"
+
+      Ext.create('Ext.window.Window', {
+        title : "Google Street View",
+        width : 600,
+        height: 600,
+        layout : 'fit',
+        items : [{
+          xtype : "component",
+          autoEl : {
+            tag : "iframe",
+            src : gsv_url
+          }
+        }]
       }).show();
     }
 
